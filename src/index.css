@@ -1,0 +1,94 @@
+/* HomePage hero */
+
+.home-hero p{
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.Hero-button{
+    width: 20%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer-content{
+    padding: 0rem 3rem 0rem 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.footer-content p{
+    color: #666;
+    font-size: 0.7rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+}
+
+.footer-content p a{
+    text-decoration: none;
+}
+
+.footer-links h1{
+    font-size: 1.25rem;
+    color: #424242;
+}
+
+.footer-links a{
+    color: #666;
+    font-size: 0.875rem;
+    text-decoration: none;
+    line-height: 2.3rem;
+}
+
+.footer-links a:hover{
+    color: #387ed1 !important;
+}
+
+.footer-icons ul li a{
+    font-size: 1.25rem;
+    margin-right: 4rem;
+    color: #666;
+}
+
+.footer-icons ul li a:hover{
+    color: #387ed1;
+    z-index: 11;
+}
+
+.footer-icons ul li{
+    display: inline-block;
+    width: 1.5rem;
+    margin-right: 1.3rem;
+}
+
+.footer-icons ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-icons{
+    padding-right: 5rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    height: 3rem;
+    margin-bottom: 0.25rem;
+}
+
+.footer-bottom-links a{
+    color: #9b9b9b;
+    text-decoration: none;
+    font-size: 0.75rem;
+    margin-right: 1.25rem;
+}
+
+.footer-bottom-links a:hover{
+    color: #387ed1;
+    z-index: 266;
+}
