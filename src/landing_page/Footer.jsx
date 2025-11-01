@@ -11,16 +11,16 @@ function Footer() {
                     <p className='mb-0'>&#169; 2010 - 2025, TradeX Broking Ltd.</p>
                     <p>All rights reserved.</p>
                     <ul>
-                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i className="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="#"><i className="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                     <hr />
                     <ul>
-                        <li><a><i class="fa-brands fa-square-youtube"></i></a></li>
-                        <li><a><i class="fa-brands fa-square-whatsapp"></i></a></li>
-                        <li><a><i class="fa-brands fa-telegram"></i></a></li>
+                        <li><a><i className="fa-brands fa-square-youtube"></i></a></li>
+                        <li><a><i className="fa-brands fa-square-whatsapp"></i></a></li>
+                        <li><a><i className="fa-brands fa-telegram"></i></a></li>
                     </ul>
                 </div>
                 <div className="col footer-links" >

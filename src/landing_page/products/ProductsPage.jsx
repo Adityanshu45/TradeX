@@ -4,12 +4,74 @@ import LeftSection from './LeftSection';
 import RightSection from './RightSection';
 import Universe from './Universe';
 
+
+let LeftSectionData =[
+    {
+        title:"Kite",
+        description:"Our ultra-fast flagship trading platform with streaming market data, advanced charts, an elegant UI, and more. Enjoy the Kite experience seamlessly on your Android and iOS devices.",
+        link1:{
+            title:"Try demo",
+            link:"#",
+        },
+        link2:{
+            title:"Learn more",
+            link:"#",
+        },
+        imageLink: "media/images/kite.png",
+        googlePlayLink:"#",
+        appstoreLink:"#"
+    },
+    {
+        title:"Coin",
+        description:"Buy direct mutual funds online, commission-free, delivered directly to your Demat account. Enjoy the investment experience on your Android and iOS devices.",
+        link1:{
+            title:"Coin",
+            link:"#",
+        },
+        imageLink: "media/images/coin.png",
+        googlePlayLink:"#",
+        appstoreLink:"#",
+    },
+    {
+        title:"Varsity mobile",
+        description:"An easy to grasp, collection of stock market lessons with in-depth coverage and illustrations. Content is broken down into bite-size cards to help you learn on the go.",
+        imageLink: "media/images/varsity.png",
+        googlePlayLink:"#",
+        appstoreLink:"#",
+    },
+]
+
+let RightSectionData =[
+    {
+        title:"Console",
+        description:"The central dashboard for your TradeX account. Gain insights into your trades and investments with in-depth reports and visualisations.",
+        link1:{
+            title:"Learn more",
+            link:"#",
+        },
+        imageLink: "media/images/console.png",
+    },
+    {
+        title:"Kite Connect API",
+        description:"Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase.",
+        link1:{
+            title:"Kite Connect",
+            link:"#",
+        },
+        imageLink: "media/images/kiteconnect.png",
+    }
+]
+
 function ProductsPage() {
     return (
         <>
             <Hero />
-            <LeftSection />
-            <RightSection />
+            <LeftSection content={LeftSectionData[1]} />
+            <RightSection content={RightSectionData[0]} />
+            <LeftSection content={LeftSectionData[1]} />
+            <RightSection content={RightSectionData[1]} />
+            <LeftSection content={LeftSectionData[2]} />
+            <p className='title-after-left-right-section'>Want to know more about our technology stack? Check out the <a href="#">TradeX.tech</a> blog.</p>
             <Universe />
         </>
     );

@@ -2,8 +2,8 @@ import React from 'react';
 
 function Team() {
     return (
-        <div className="container  mb-5">
-            <h2 className='team-heading'>The Mind Behind TreadX</h2>
+        <div className="container  mb-5 ">
+            <h2 className='team-heading border-top'>The Mind Behind TreadX</h2>
             <div className="row">
                 <div className="col-4 Team-my-profile">
                     <div className='profile-Photo'><img src="media/images/Aditya.jpg" alt="Aditya photo" /></div>

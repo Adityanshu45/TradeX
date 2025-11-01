@@ -118,6 +118,7 @@
 
 .team-heading{
     margin-top: 5rem;
+    padding-top: 2rem;
     text-align: center;
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -149,3 +150,150 @@
 .team-about-me p a{
     text-decoration: none;
 }
+
+/* --------------------------------------products page------------------------------------------------ */
+
+/* -------hero------- */
+.products-hero{
+    padding: 6.25rem 0rem 6.25rem 0rem;
+    text-align: center;
+}
+
+.products-hero h1{
+    font-size: 1.75rem;
+    line-height: 1.25;
+    color: #424242;
+}
+
+.products-hero h2{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #424242;
+}
+
+.products-hero p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.products-hero p a{
+    text-decoration: none;
+}
+
+.products-hero p a:hover{
+    color: #424242;
+    z-index: 12;
+}
+
+/* ------left Section & right section---------- */
+
+.left-section{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.left-image img{
+    width: 75%;
+}
+
+
+.content h2{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color:#424242;
+}
+
+.content p{
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #424242;
+}
+
+.content-links a{
+    text-decoration: none;   
+}
+
+.content-links a:hover{
+    color: #424242; 
+}
+
+.content-badges a img{
+    margin-top: 2rem;
+}
+
+
+.right-section{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.right-image img{
+    width: 75%;
+}
+
+.title-after-left-right-section{
+    text-align: center;
+    margin: 0.65rem 0rem 0.65rem 0rem;
+    color: #424242;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.title-after-left-right-section a{
+    text-decoration: none;
+}
+
+.title-after-left-right-section a:hover{
+    color: #424242;
+}
+
+/* ------universe component */
+
+.universe-title{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color:#424242;
+    text-align: center;
+}
+
+.universe-description{
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #424242;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.universe-logo a img{
+    height: 50px;
+    margin-top: 2rem;
+}
+
+.universe-logo{
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+.universe-logo a{
+    text-decoration: none;
+}
+
+.universe-logo a p{
+    color: #424242;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.universe-button{
+    width: 20%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: 500;
+}
+
