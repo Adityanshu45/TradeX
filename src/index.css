@@ -13,11 +13,6 @@
 }
 
 /* Footer */
-.footer-content{
-    padding: 0rem 3rem 0rem 3rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-}
 
 .footer-content p{
     color: #666;
@@ -70,6 +65,11 @@
 
 .footer-icons{
     padding-right: 5rem;
+
+}
+
+.footer-icons .logo{
+    margin-bottom: 2rem;
 }
 
 .footer-bottom-links {
@@ -91,4 +91,61 @@
 .footer-bottom-links a:hover{
     color: #387ed1;
     z-index: 266;
+}
+
+/* invalid link  */
+
+.page-not-found{
+    padding: 5rem;
+}
+
+/* about page */
+.about-hero-heading{
+    text-align: center;
+    padding: 6.25rem 0rem 6.25rem 0rem;
+}
+
+.about-hero-heading h2{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #424242;
+}
+
+.about-hero-content p a{
+    text-decoration: none;
+}
+
+.team-heading{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 5rem;
+    color: #424242;
+}
+
+.profile-Photo img{
+    text-align: center;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.Team-my-profile{
+    text-align: center;
+}
+
+.Team-my-profile h2{
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    color: #424242;
+}
+
+.Team-my-profile p{
+    margin-top: 1rem;
+    color: #424242;
+}
+
+.team-about-me p a{
+    text-decoration: none;
 }

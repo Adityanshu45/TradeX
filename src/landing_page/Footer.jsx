@@ -3,10 +3,11 @@ import React from 'react';
 function Footer() {
     return (
     <footer>   
-        <div className="border-top" style={{backgroundColor :"#fbfbfb"}}>
-            <div className='row p-5 ms-5 me-5'>
-                <div className="col-3 ms-5 footer-icons" >
-                    <img className='p-1 mb-2' src="media/images/logo.svg" alt="" style={{width:"130px"}} />
+        <div className=" border-top " style={{backgroundColor :"#fbfbfb"}}>
+            <div className="container mt-4">
+            <div className='row'>
+                <div className="col-3 footer-icons" >
+                    <img className='logo' src="media/images/logo.svg" alt="" style={{width:"130px"}} />
                     <p className='mb-0'>&#169; 2010 - 2025, TradeX Broking Ltd.</p>
                     <p>All rights reserved.</p>
                     <ul>
@@ -84,6 +85,7 @@ function Footer() {
                 <a href="#">Disclouser</a>
                 <a href="#">For investor's attention</a>
                 <a href="#">Investor charter</a>
+            </div>
             </div>
         </div>
     </footer> 
