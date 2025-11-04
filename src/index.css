@@ -297,3 +297,88 @@
     font-weight: 500;
 }
 
+
+/* --------------------------------------pricing page ------------------------------------------------------*/
+
+/* ------hero------ */
+.pricing-hero-title{
+    margin: 6.25rem 0rem 6.25rem 0rem;
+    text-align: center;
+}
+
+.pricing-hero-title h2{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #424242;
+}
+
+.pricing-hero-title p{
+    margin: 0.75rem 0rem 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #9b9b9b;
+}
+
+.pricing-hero-badges{
+    padding: 5rem 0rem 1.25rem 0rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.pricing-hero-badges .badges img{
+    width: 55%;
+}
+
+.pricing-hero-badges .badges{
+    text-align: center;
+}
+
+.pricing-hero-badges .badges h2{
+    font-size: 1.75rem;
+    color: #424242;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.pricing-hero-badges .badges p{
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+/* ------brokerage----------- */
+
+.brokerage{
+    margin-bottom: 3rem;
+}
+
+.brokerage-content{
+    margin-top: 4rem;
+}
+
+.brokerage-content a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.brokerage-content a:hover{
+    color: #424242;
+    z-index: 21;
+}
+
+.brokerage-content a h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.75rem;
+}
+
+.brokerage-content ul li{
+    font-size: 0.85rem;
+    color: #424242;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+
+
