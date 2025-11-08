@@ -199,7 +199,6 @@
     width: 75%;
 }
 
-
 .content h2{
     font-size: 1.5rem;
     line-height: 1.5;
@@ -395,17 +394,17 @@
     padding-bottom: 3rem;
 }
 
-.content{
+.support-hero-content{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
 
-.content h1{
+.support-hero-content h1{
     color: #424242;
 }
 
-.content .btn{
+.support-hero-content .btn{
     padding: 0rem 1rem 0rem 1rem;
     margin-top: 0.35rem;
     margin-bottom: 0.35rem;
@@ -413,7 +412,7 @@
     font-weight: 600;
 }
 
-.content .btn:hover{
+.support-hero-content .btn:hover{
     background-color: #424242;
 }
 
@@ -485,3 +484,31 @@
     color: #424242;
 }
 
+
+/* ------------------------------Coming Soon Model ----------------------------------- */
+
+.Coming-soon{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.Coming-soon h3{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.Coming-soon p{
+    color: #424242;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
+.Coming-soon {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(1.5rem); }
+  to { opacity: 1; transform: translateY(0); }
+}

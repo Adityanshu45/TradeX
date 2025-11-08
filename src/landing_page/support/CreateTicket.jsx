@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CreateTicket() {
     return (
@@ -8,37 +9,37 @@ function CreateTicket() {
                 <div className="col-4 category-tickets">
                     <h3><i class="fa-solid fa-circle-plus"></i> Account Opening</h3>
                     <ul>
-                        <li><a href="">Online Account Opening</a></li>
-                        <li><a href="">Offline Account Opening</a></li>
-                        <li><a href="">Company, Partnership and HUF Account Opening</a></li>
-                        <li><a href="">NRI Account Opening</a></li>
-                        <li><a href="">Charges at TradeX</a></li>
-                        <li><a href="">TradeX IDFC FIRST Bank 3-in-1 Account</a></li>
-                        <li><a href="">Getting Started</a></li>
+                        <li><Link to="/coming-soon">Online Account Opening</Link></li>
+                        <li><Link to="/coming-soon">Offline Account Opening</Link></li>
+                        <li><Link to="/coming-soon">Company, Partnership and HUF Account Opening</Link></li>
+                        <li><Link to="/coming-soon">NRI Account Opening</Link></li>
+                        <li><Link to="/coming-soon">Charges at TradeX</Link></li>
+                        <li><Link to="/coming-soon">TradeX IDFC FIRST Bank 3-in-1 Account</Link></li>
+                        <li><Link to="/coming-soon">Getting Started</Link></li>
                     </ul>
                 </div>
                 <div className="col-4 category-tickets">
                     <h3><i class="fa-solid fa-user"></i> Your TeadeX Account</h3>
                     <ul>
-                        <li><a href="">Login Credentials</a></li>
-                        <li><a href="">Account Modification and Segment Addition</a></li>
-                        <li><a href="">DP ID and bank details</a></li>
-                        <li><a href="">Your Profile</a></li>
-                        <li><a href="">Transfer and conversion of shares</a></li>
+                        <li><Link to="/coming-soon">Login Credentials</Link></li>
+                        <li><Link to="/coming-soon">Account Modification and Segment Addition</Link></li>
+                        <li><Link to="/coming-soon">DP ID and bank details</Link></li>
+                        <li><Link to="/coming-soon">Your Profile</Link></li>
+                        <li><Link to="/coming-soon">Transfer and conversion of shares</Link></li>
                     </ul>
                 </div>
                 <div className="col-4 category-tickets">
                     <h3><i class="far fa-chart-bar"></i> Kite</h3>
                     <ul>
-                        <li><a href="">Margin/leverage, Product and Order types.</a></li>
-                        <li><a href="">Kite Web and Mobile</a></li>
-                        <li><a href="">Trading FAQs</a></li>
-                        <li><a href="">Corporate Actions</a></li>
-                        <li><a href="">Kite API</a></li>
-                        <li><a href="">Sentinel</a></li>
-                        <li><a href="">Pi and other platforms</a></li>
-                        <li><a href="">Stockreports+</a></li>
-                        <li><a href="">GTT</a></li>
+                        <li><Link to="/coming-soon">Margin/leverage, Product and Order types.</Link></li>
+                        <li><Link to="/coming-soon">Kite Web and Mobile</Link></li>
+                        <li><Link to="/coming-soon">Trading FAQs</Link></li>
+                        <li><Link to="/coming-soon">Corporate Actions</Link></li>
+                        <li><Link to="/coming-soon">Kite API</Link></li>
+                        <li><Link to="/coming-soon">Sentinel</Link></li>
+                        <li><Link to="/coming-soon">Pi and other platforms</Link></li>
+                        <li><Link to="/coming-soon">Stockreports+</Link></li>
+                        <li><Link to="/coming-soon">GTT</Link></li>
                     </ul>
                 </div>
             </div>
@@ -46,32 +47,32 @@ function CreateTicket() {
                 <div className="col-4 category-tickets">
                     <h3><i class="fa-solid fa-credit-card"></i> Funds</h3>
                     <ul>
-                        <li><a href="">Adding Funds</a></li>
-                        <li><a href="">Fund Withdrawal</a></li>
-                        <li><a href="">eMandates</a></li>
-                        <li><a href="">Adding Bank Accounts</a></li>
+                        <li><Link to="/coming-soon">Adding Funds</Link></li>
+                        <li><Link to="/coming-soon">Fund Withdrawal</Link></li>
+                        <li><Link to="/coming-soon">eMandates</Link></li>
+                        <li><Link to="/coming-soon">Adding Bank Accounts</Link></li>
                     </ul>
                 </div>
                 <div className="col-4 category-tickets">
                     <h3><i class="fa-solid fa-circle-notch"></i> Console</h3>
                     <ul>
-                        <li><a href="">Report</a></li>
-                        <li><a href="">Ledger</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">60 Days Challange</a></li>
-                        <li><a href="">IPO</a></li>
-                        <li><a href="">Refferal Program</a></li>                        
+                        <li><Link to="/coming-soon">Report</Link></li>
+                        <li><Link to="/coming-soon">Ledger</Link></li>
+                        <li><Link to="/coming-soon">Portfolio</Link></li>
+                        <li><Link to="/coming-soon">60 Days Challange</Link></li>
+                        <li><Link to="/coming-soon">IPO</Link></li>
+                        <li><Link to="/coming-soon">Refferal Program</Link></li>                        
                     </ul>
                 </div>
                 <div className="col-4 category-tickets">
                     <h3><i class="fa-regular fa-circle"></i> Coin</h3>
                     <ul>
-                        <li><a href="">Mutual Funds</a></li>
-                        <li><a href="">National Pension Schema (NPS)</a></li>
-                        <li><a href="">Fix Deposit (FD)</a></li>
-                        <li><a href="">Features On Coin</a></li>
-                        <li><a href="">Payments And Order</a></li>
-                        <li><a href="">Genral</a></li>
+                        <li><Link to="/coming-soon">Mutual Funds</Link></li>
+                        <li><Link to="/coming-soon">National Pension Schema (NPS)</Link></li>
+                        <li><Link to="/coming-soon">Fix Deposit (FD)</Link></li>
+                        <li><Link to="/coming-soon">Features On Coin</Link></li>
+                        <li><Link to="/coming-soon">Payments And Order</Link></li>
+                        <li><Link to="/coming-soon">Genral</Link></li>
                     </ul>
                 </div>
             </div>

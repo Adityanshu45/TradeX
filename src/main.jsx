@@ -11,6 +11,7 @@ import ProductsPage from "./landing_page/products/ProductsPage";
 import PricingPage from './landing_page/pricing/PricingPage';
 import SupportPage from "./landing_page/support/SupportPage";
 import NotFound from './landing_page/NotFound.jsx';
+import ComingSoonModal from './landing_page/ComingSoonModel.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/products" element={<ProductsPage/>}></Route>
       <Route path="/pricing" element={<PricingPage />}></Route>
       <Route path="/support" element={<SupportPage />}></Route>
+      <Route path='/coming-soon' element={<ComingSoonModal />}></Route>
       <Route path="*" element={<NotFound />}></Route>
     </Routes>
   <Footer />        

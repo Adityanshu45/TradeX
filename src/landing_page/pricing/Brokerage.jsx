@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Brokerage() {
     return (
         <div className="container border-top brokerage">
             <div className="row">
                 <div className="col-8 brokerage-content">
-                    <a href=""><h3>Brokerage calculator</h3></a>
+                    <Link to="/coming-soon" ><h3>Brokerage calculator</h3></Link>
                     <ul>
                         <li>Call & Trade and RMS auto-squareoff: Additional charges of 250+ GST per order.</li>
                         <li>Digital contract notes will be sent via e-mail.</li>
@@ -16,7 +17,7 @@ function Brokerage() {
                     </ul>
                 </div>
                 <div className="col-4 brokerage-content">
-                    <a href=""><h3>List of charges</h3></a>
+                    <Link to="/coming-soon"><h3>List of charges</h3></Link>
                 </div>
             </div>
         </div>

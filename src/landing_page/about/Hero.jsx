@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Hero() {
     return ( 
@@ -15,8 +16,8 @@ function Hero() {
                 </div>
                 <div className="col-6">
                     <p>In addition, we run a number of popular open online educational and community initiatives to empower retail traders and investors.</p>
-                    <p><a href="#">Rainmatter</a>, our fintech fund and incubator, has invested in several fintech startups with the goal of growing the Indian capital markets.</p>
-                    <p>And yet, we are always up to something new every day. Catch up on the latest updates on our <a href="#">blog</a> or see what the media is <a href="#">saying about us</a> or learn more about our business and product <a href="#">philosophies.</a></p>
+                    <p><Link to='/coming-soon'>Rainmatter</Link>, our fintech fund and incubator, has invested in several fintech startups with the goal of growing the Indian capital markets.</p>
+                    <p>And yet, we are always up to something new every day. Catch up on the latest updates on our <Link to='/coming-soon'>blog</Link> or see what the media is <Link to='/coming-soon'>saying about us</Link> or learn more about our business and product <Link to='/coming-soon'>philosophies.</Link></p>
                 </div>
             </div>
         </div>

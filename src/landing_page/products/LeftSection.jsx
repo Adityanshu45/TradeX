@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function LeftSection({content}) {
     return (
@@ -6,7 +7,6 @@ function LeftSection({content}) {
             <div className="row align-items-center">
                 <div className="col-6 left-image">
                     <img src={content.imageLink} alt="kite image" />
-                    {console.log(content)}
                 </div>
                 <div className="col-2"></div>
                 <div className="col-4 content">
@@ -16,24 +16,24 @@ function LeftSection({content}) {
                         {content.link1 ?
                         (
                             <div className="col-6 content-links">
-                                <a href={content.link1.link}>{content.link1.title} <i className="fa-solid fa-arrow-right"></i></a>
+                                <Link  to={content.link1.link}>{content.link1.title} <i className="fa-solid fa-arrow-right"></i></Link>
                             </div>
                             ) :null
                         }
                         {content.link2 ? 
                         (
                             <div className="col-6 content-links">
-                                <a href={content.link2.link}>{content.link2.title} <i className="fa-solid fa-arrow-right"></i></a>
+                                <Link to={content.link2.link}>{content.link2.title} <i className="fa-solid fa-arrow-right"></i></Link>
                             </div>
                         ) : null
                         }
                     </div>
                     <div className="row">
                         <div className="col-6 content-badges">
-                            <a href={content.googlePlayLink}><img src="media/images/googlePlayBadge.svg" alt="googlePlayimage" /></a>
+                            <Link to={content.googlePlayLink}><img src="media/images/googlePlayBadge.svg" alt="googlePlayimage" /></Link>
                         </div>
                         <div className="col-6 content-badges">
-                            <a href={content.appstoreLink}><img src="media/images/appstoreBadge.svg" alt="appstoreimage" /></a>
+                            <Link to={content.appstoreLink}><img src="media/images/appstoreBadge.svg" alt="appstoreimage" /></Link>
                         </div>
                     </div>
                 </div>
