@@ -1,0 +1,514 @@
+/* HomePage hero */
+
+.home-hero p{
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.Hero-button{
+    width: 20%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+/* Footer */
+
+.footer-content p{
+    color: #666;
+    font-size: 0.7rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+}
+
+.footer-content p a{
+    text-decoration: none;
+}
+
+.footer-links h1{
+    font-size: 1.25rem;
+    color: #424242;
+}
+
+.footer-links a{
+    color: #666;
+    font-size: 0.875rem;
+    text-decoration: none;
+    line-height: 2.3rem;
+}
+
+.footer-links a:hover{
+    color: #387ed1 !important;
+}
+
+.footer-icons ul li a{
+    font-size: 1.25rem;
+    margin-right: 4rem;
+    color: #666;
+}
+
+.footer-icons ul li a:hover{
+    color: #387ed1;
+    z-index: 11;
+}
+
+.footer-icons ul li{
+    display: inline-block;
+    width: 1.5rem;
+    margin-right: 1.3rem;
+}
+
+.footer-icons ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-icons{
+    padding-right: 5rem;
+
+}
+
+.footer-icons .logo{
+    margin-bottom: 2rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    height: 3rem;
+    margin-bottom: 0.25rem;
+}
+
+.footer-bottom-links a{
+    color: #9b9b9b;
+    text-decoration: none;
+    font-size: 0.75rem;
+    margin-right: 1.25rem;
+}
+
+.footer-bottom-links a:hover{
+    color: #387ed1;
+    z-index: 266;
+}
+
+/* invalid link  */
+
+.page-not-found{
+    padding: 5rem;
+}
+
+/* about page */
+.about-hero-heading{
+    text-align: center;
+    padding: 6.25rem 0rem 6.25rem 0rem;
+}
+
+.about-hero-heading h2{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #424242;
+}
+
+.about-hero-content p a{
+    text-decoration: none;
+}
+
+.team-heading{
+    margin-top: 5rem;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 5rem;
+    color: #424242;
+}
+
+.profile-Photo img{
+    text-align: center;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.Team-my-profile{
+    text-align: center;
+}
+
+.Team-my-profile h2{
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    color: #424242;
+}
+
+.Team-my-profile p{
+    margin-top: 1rem;
+    color: #424242;
+}
+
+.team-about-me p a{
+    text-decoration: none;
+}
+
+/* --------------------------------------products page------------------------------------------------ */
+
+/* -------hero------- */
+.products-hero{
+    padding: 6.25rem 0rem 6.25rem 0rem;
+    text-align: center;
+}
+
+.products-hero h1{
+    font-size: 1.75rem;
+    line-height: 1.25;
+    color: #424242;
+}
+
+.products-hero h2{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #424242;
+}
+
+.products-hero p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.products-hero p a{
+    text-decoration: none;
+}
+
+.products-hero p a:hover{
+    color: #424242;
+    z-index: 12;
+}
+
+/* ------left Section & right section---------- */
+
+.left-section{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.left-image img{
+    width: 75%;
+}
+
+.content h2{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color:#424242;
+}
+
+.content p{
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #424242;
+}
+
+.content-links a{
+    text-decoration: none;   
+}
+
+.content-links a:hover{
+    color: #424242; 
+}
+
+.content-badges a img{
+    margin-top: 2rem;
+}
+
+
+.right-section{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.right-image img{
+    width: 75%;
+}
+
+.title-after-left-right-section{
+    text-align: center;
+    margin: 0.65rem 0rem 0.65rem 0rem;
+    color: #424242;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.title-after-left-right-section a{
+    text-decoration: none;
+}
+
+.title-after-left-right-section a:hover{
+    color: #424242;
+}
+
+/* ------universe component */
+
+.universe-title{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color:#424242;
+    text-align: center;
+}
+
+.universe-description{
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #424242;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.universe-logo a img{
+    height: 50px;
+    margin-top: 2rem;
+}
+
+.universe-logo{
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+.universe-logo a{
+    text-decoration: none;
+}
+
+.universe-logo a p{
+    color: #424242;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.universe-button{
+    width: 20%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+
+/* --------------------------------------pricing page ------------------------------------------------------*/
+
+/* ------hero------ */
+.pricing-hero-title{
+    margin: 6.25rem 0rem 6.25rem 0rem;
+    text-align: center;
+}
+
+.pricing-hero-title h2{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #424242;
+}
+
+.pricing-hero-title p{
+    margin: 0.75rem 0rem 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #9b9b9b;
+}
+
+.pricing-hero-badges{
+    padding: 5rem 0rem 1.25rem 0rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.pricing-hero-badges .badges img{
+    width: 55%;
+}
+
+.pricing-hero-badges .badges{
+    text-align: center;
+}
+
+.pricing-hero-badges .badges h2{
+    font-size: 1.75rem;
+    color: #424242;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.pricing-hero-badges .badges p{
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+/* ------brokerage----------- */
+
+.brokerage{
+    margin-bottom: 3rem;
+}
+
+.brokerage-content{
+    margin-top: 4rem;
+}
+
+.brokerage-content a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.brokerage-content a:hover{
+    color: #424242;
+    z-index: 21;
+}
+
+.brokerage-content a h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.75rem;
+}
+
+.brokerage-content ul li{
+    font-size: 0.85rem;
+    color: #424242;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+
+/* ------------------------------Create tickets------------------------------ */
+
+
+/* ------------hero------------- */
+
+.support-hero-box{
+    background-color: #f6f6f6;
+}
+
+.support-hero{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.support-hero-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.support-hero-content h1{
+    color: #424242;
+}
+
+.support-hero-content .btn{
+    padding: 0rem 1rem 0rem 1rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.support-hero-content .btn:hover{
+    background-color: #424242;
+}
+
+.input-field{
+    position: relative; /* key change */
+    width: 100%;
+}
+
+.input-field i{
+    position: absolute;  /* place icon inside input */
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #888;
+}
+
+.input-field input{
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.35rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+    outline: none;
+}
+
+
+/* ----------create-ticket-------------- */
+
+.all-tickets{
+    padding: 4rem 0rem 3rem 0rem;
+}
+
+.all-tickets h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.category-tickets{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.category-tickets h3{
+    font-size: 1.05rem;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+    color: #424242;
+    margin-bottom: 1.5rem;
+}
+
+.category-tickets ul{
+    padding: 0;
+}
+
+.category-tickets ul li{
+    list-style: none;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.category-tickets ul li a{
+    text-decoration: none;
+}
+
+.category-tickets ul li a:hover{
+    color: #424242;
+}
+
+
+/* ------------------------------Coming Soon Model ----------------------------------- */
+
+.Coming-soon{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.Coming-soon h3{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.Coming-soon p{
+    color: #424242;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
+.Coming-soon {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(1.5rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
