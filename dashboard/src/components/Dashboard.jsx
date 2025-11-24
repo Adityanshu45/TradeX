@@ -11,6 +11,7 @@ import Apps from "./Apps.jsx";
 function Dashboard() {
   return (
     <div className="dashboard-container">
+      {/*  */}
       {/* <GeneralContextProvider> */}
       <WatchList />
       {/* </GeneralContextProvider> */}

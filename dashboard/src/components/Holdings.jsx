@@ -1,12 +1,23 @@
-import React from "react";
-import { holdings } from "../data/data.js";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 function Holdings() {
-  const currentValue = holdings.reduce((sum, stock) => {
+  //store all holdings fetch from backend API
+  let [allHoldings, setAllHoldings] = useState([]);
+
+  //fetch holdings data when component is load
+  useEffect(() => {
+    axios.get("http://localhost:8080/allHoldings").then((res) => {
+      setAllHoldings(res.data);
+    }, []);
+  });
+
+  //basic operation use in component
+  const currentValue = allHoldings.reduce((sum, stock) => {
     return sum + stock.qty * stock.price;
   }, 0);
 
-  const totalInvestment = holdings.reduce((sum, stock) => {
+  const totalInvestment = allHoldings.reduce((sum, stock) => {
     return sum + stock.qty * stock.avg;
   }, 0);
 
@@ -16,7 +27,7 @@ function Holdings() {
 
   return (
     <>
-      <h3 className="title">Holdings ({holdings.length})</h3>
+      <h3 className="title">Holdings ({allHoldings.length})</h3>
       <div className="order-table">
         <table>
           <thead>
@@ -32,7 +43,7 @@ function Holdings() {
             </tr>
           </thead>
           <tbody>
-            {holdings.map((stock, index) => {
+            {allHoldings.map((stock, index) => {
               const currValue = stock.qty * stock.price;
               const isProfit = currValue - stock.avg * stock.qty >= 0.0;
               const rowProfitClass = isProfit ? "profit" : "loss";
