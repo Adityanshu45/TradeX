@@ -7,14 +7,15 @@ import Holdings from "./Holdings.jsx";
 import Positions from "./Positions.jsx";
 import Funds from "./Funds.jsx";
 import Apps from "./Apps.jsx";
+import BuyActionWindow from "./BuyActionWindow.jsx";
+import { GeneralContextProvider } from "./GeneralContext.jsx";
 
 function Dashboard() {
   return (
     <div className="dashboard-container">
-      {/*  */}
-      {/* <GeneralContextProvider> */}
-      <WatchList />
-      {/* </GeneralContextProvider> */}
+      <GeneralContextProvider>
+        <WatchList />
+      </GeneralContextProvider>
       <div className="content">
         <Routes>
           <Route exact path="/" element={<Summary />} />
@@ -22,7 +23,7 @@ function Dashboard() {
           <Route path="/holdings" element={<Holdings />} />
           <Route path="/positions" element={<Positions />} />
           <Route path="/funds" element={<Funds />} />
-          <Route path="/apps" element={<Apps />} />
+          <Route path="/apps" element={<BuyActionWindow />} />
         </Routes>
       </div>
     </div>

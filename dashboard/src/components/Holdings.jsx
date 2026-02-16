@@ -9,8 +9,8 @@ function Holdings() {
   useEffect(() => {
     axios.get("http://localhost:8080/allHoldings").then((res) => {
       setAllHoldings(res.data);
-    }, []);
-  });
+    });
+  }, []);
 
   //basic operation use in component
   const currentValue = allHoldings.reduce((sum, stock) => {
