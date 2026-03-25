@@ -1,20 +1,19 @@
+require("dotenv").config(); // Load environment variables from .env file
 
-require('dotenv').config();    // Load environment variables from .env file
-
-const express = require('express');  
+const express = require("express");
 const app = express();
-;                
 const bodyParser = require("body-parser");
-const cors = require("cors");  // Allows frontend (React) to access backend API running on another port
-const mongoose = require('mongoose');
+const cors = require("cors"); // Allows frontend (React) to access backend API running on another port
+const mongoose = require("mongoose");
 
-const ATLAS_DB_URL=process.env.ATLAS_DB_URL;
+const ATLAS_DB_URL = process.env.ATLAS_DB_URL;
 const PORT = process.env.PORT || 8080;
 
 // Import MongoDB Models
 const HoldingsModel = require("./models/HoldingsModel");
 const WatchListModel = require("./models/WatchListModel");
 const PositionsModel = require("./models/PositionsModel");
+const OrdersModel = require("./models/OrdersModel");
 
 // Middleware to parse JSON bodies from client
 app.use(bodyParser.json());
@@ -25,17 +24,15 @@ app.use(cors());
 //-------------------------connect to database------------------------------------
 
 main()
-.then(()=>{
+  .then(() => {
     console.log("DataBase connected");
-})
-.catch((err)=>{
+  })
+  .catch((err) => {
     console.log(err);
-})
+  });
 async function main() {
-    await mongoose.connect(ATLAS_DB_URL);
+  await mongoose.connect(ATLAS_DB_URL);
 }
-
-
 
 //------------------------------add temp data ----------------------------------
 // app.get('/addTempData', async(req, res) => {
@@ -248,27 +245,42 @@ async function main() {
 //     res.send('Temp Data save successfully')
 // });
 
-
 //-------------------- fetch positions from database-----------------------------
-app.get("/allPositions" , async(req, res)=>{
-    let allPositions = await PositionsModel.find({});
-    res.json(allPositions);
+
+app.get("/allPositions", async (req, res) => {
+  let allPositions = await PositionsModel.find({});
+  res.json(allPositions);
 });
 
 //-------------------- fetch holdings from database-----------------------------
-app.get("/allHoldings" , async(req, res)=>{
-    let allHoldings = await HoldingsModel.find({});
-    res.json(allHoldings);
+app.get("/allHoldings", async (req, res) => {
+  let allHoldings = await HoldingsModel.find({});
+  res.json(allHoldings);
 });
 
+//-------------------- fetch watchlist from database-----------------------------
+app.get("/allWatchlist", async (req, res) => {
+  let allwatchlist = await WatchListModel.find({});
+  res.json(allwatchlist);
+});
+
+app.post("/newOrder", async (req, res) => {
+  let newOrder = new OrdersModel(req.body);
+  //check sell order is exist or not
+  console.log(newOrder);
+  //get all buy order
+  let allBuyOrder = await OrdersModel.find({ name: newOrder.name });
+  console.log(allBuyOrder);
+  await newOrder.save();
+  res.send("done");
+});
 
 //-----------------------------default route-----------------------------------
-app.get("/", (req,res) => {
-    res.send("hello");
+app.get("/", (req, res) => {
+  res.send("hello");
 });
 
-
 //------------------- Start the server and listen on the specified port---------
-app.listen(PORT , ()=>{
-    console.log("server start");
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
