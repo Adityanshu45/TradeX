@@ -1,6 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
+import axios from "axios";
 import { Tooltip, Grow, formControlClasses } from "@mui/material";
-import { watchlist } from "../data/data";
+// import { watchlist } from "../data/data";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import BarChartIcon from "@mui/icons-material/BarChart";
@@ -8,6 +9,15 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import GeneralContext from "./GeneralContext";
 
 function WatchList() {
+  const [allWatchList, setAllWatchlist] = useState([]);
+  // Fetch watchlist data  when component load
+  useEffect(() => {
+    axios.get("http://localhost:8080/allWatchlist").then((res) => {
+      // Update state with API response
+      setAllWatchlist(res.data);
+    }, []);
+  });
+
   return (
     <div className="watchlist-container">
       <div className="search-container">
@@ -18,11 +28,11 @@ function WatchList() {
           placeholder="Search eg:infy, bse, nifty fut weekly, gold mcx"
           className="search"
         />
-        <span className="counts">{watchlist.length} / 50</span>
+        <span className="counts">{allWatchList.length} / 50</span>
       </div>
 
       <ul className="list">
-        {watchlist.map((stock, index) => (
+        {allWatchList.map((stock, index) => (
           <WatchlistItem key={index} stock={stock} index={index} />
         ))}
       </ul>
@@ -70,6 +80,11 @@ const WatchlistActions = ({ uuid }) => {
   const handleBuyClick = () => {
     generalContext.openBuyWindow(uuid);
   };
+
+  const handleSellClick = () => {
+    generalContext.openSellWindow(uuid);
+  };
+
   return (
     <span className="actions">
       <span>
@@ -87,6 +102,7 @@ const WatchlistActions = ({ uuid }) => {
           placement="top"
           arrow
           TransitionComponent={Grow}
+          onClick={handleSellClick}
         >
           <button className="sell">Sell</button>
         </Tooltip>
